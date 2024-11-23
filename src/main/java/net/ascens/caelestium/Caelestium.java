@@ -44,6 +44,7 @@ public class Caelestium
         Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
 
+    //testing if I can edit on phone
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
     }
