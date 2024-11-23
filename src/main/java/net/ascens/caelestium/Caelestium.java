@@ -1,5 +1,6 @@
 package net.ascens.caelestium;
 
+import net.ascens.caelestium.item.CaeItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -28,6 +29,7 @@ public class Caelestium
     public Caelestium(IEventBus modEventBus, ModContainer modContainer) {
         modEventBus.addListener(this::commonSetup);
         NeoForge.EVENT_BUS.register(this);
+        CaeItems.register(modEventBus);
         modEventBus.addListener(this::addCreative);
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
